@@ -1,4 +1,4 @@
-# Fuck off, @twitter [![GitHub Actions: Black](https://github.com/cuducos/fuckoff-twitter/workflows/Black/badge.svg)]()<br><small>Let me have "lastest tweets" as a default.</small>
+# Fuck off, @twitter
 
 This tiny script automated that for me:
 
@@ -8,15 +8,14 @@ This tiny script automated that for me:
 
 ## Requirements
 
-* [Python](https://python.org) 3.7+
-* [Pipenv](https://pipenv.readthedocs.io)
+* [Rust](https://www.rust-lang.org/) with `cargo`
 
 ## Settings
 
 1. Create an app and get your API keys from [Twitter's Developer platform]([https://developer.twitter.com/](https://developer.twitter.com/))
-2. Copy `.env.sample` as `.env` and add the API keys from the previous step
-3. In the `.env`, insert into `TWEET` the text you want to tweet when this script runs
-4. **Optionally**, if you want this tweet to be a reply for a given tweet, add the status ID number of that given tweet into `REPLY_TO` (otherwise just leave it blank)
+2. Create environment variables as described in `.env.sample`
+    1. The `TWEET` variable is the text you want to tweet when this script runs
+    1. **Optionally**, if you want this tweet to be a reply for a given tweet, add the status ID number of that given tweet into `REPLY_TO` (otherwise just ignore it)
 
 For example, these last two settings look like that in my case:
 
@@ -28,7 +27,7 @@ REPLY_TO=1197153914916888579
 ## Running
 
 ```console
-$ pipenv run python -m fuckoff
+$ cargo run
 https://twitter.com/cuducos/status/1194269206419775488
 ```
 

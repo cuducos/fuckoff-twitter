@@ -1,0 +1,9 @@
+[package]
+name = "fuckoff-twitter"
+version = "0.0.1"
+authors = ["Eduardo Cuducos <cuducos@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+egg-mode = "*"
+tokio = "*"

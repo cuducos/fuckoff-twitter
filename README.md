@@ -1,4 +1,4 @@
-# Fuck off, @twitter
+# Fuck off, @twitter ![Build](https://github.com/cuducos/fuckoff-twitter/workflows/Build/badge.svg)
 
 This tiny script automated that for me:
 

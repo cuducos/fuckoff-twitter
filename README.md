@@ -6,16 +6,13 @@ This tiny script automated that for me:
 >
 > &mdash; Eduardo Cuducos, [November 20, 2019](https://twitter.com/cuducos/status/1197153914916888579)
 
-## Requirements
-
-* [Rust](https://www.rust-lang.org/) with `cargo`
-
-## Settings
+## Usage
 
 1. Create an app and get your API keys from [Twitter's Developer platform]([https://developer.twitter.com/](https://developer.twitter.com/))
 2. Create environment variables as described in `.env.sample`
     1. The `TWEET` variable is the text you want to tweet when this script runs
     1. **Optionally**, if you want this tweet to be a reply for a given tweet, add the status ID number of that given tweet into `REPLY_TO` (otherwise just ignore it)
+3. [Download the executablel](https://github.com/cuducos/fuckoff-twitter/releases/tag/latest) for Linux, macOS or Windows and run it!
 
 For example, these last two settings look like that in my case:
 
@@ -24,7 +21,9 @@ TWEET=Fuck off @twitter, let me have "lastest tweets" as a default.
 REPLY_TO=1197153914916888579
 ```
 
-## Running
+## Development & contributing
+
+Requires [Rust](https://www.rust-lang.org/) with `cargo`:
 
 ```console
 $ cargo run

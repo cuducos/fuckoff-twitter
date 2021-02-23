@@ -17,7 +17,7 @@ This tiny script automated that for me:
 For example, these last two settings look like that in my case:
 
 ```
-TWEET=Fuck off @twitter, let me have "lastest tweets" as a default.
+TWEET=Fuck off @twitter, let me have "latest tweets" as a default.
 REPLY_TO=1197153914916888579
 ```
 

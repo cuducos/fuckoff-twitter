@@ -1,0 +1,15 @@
+{
+  "name": "Force \"Latests Tweets\" on first load",
+  "version": "0.1",
+  "description": "Forces Twitter to show \"Latests Tweets\" always. Only runs on the first load.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/home"
+      ],
+      "run_at": "document_start",
+      "js": ["main.js"]
+    }
+  ]
+}

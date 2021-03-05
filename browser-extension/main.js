@@ -9,7 +9,7 @@ let observer_state = 'FIND_BUTTON';
 
 const observer = new MutationObserver(mutationList => {
   for (const mutation of mutationList) {
-    node = mutation.target;
+    const node = mutation.target;
     switch (observer_state) {
       case 'FIND_BUTTON':
         const menuButton = node.querySelector('div[aria-label^="Top Tweets"]')

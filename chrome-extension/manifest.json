@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Fuck Off Twitter",
+    "version": "1.0",
+  
+    "description": "Fuck off @twitter, let me have \"latest tweets\" as a default.",
+    "background":{
+        "scripts": ["src/background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "images/fuckofftwitter.png",
+        "default_title": "Fuck Off Twitter"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/home"],
+            "js": [
+                "src/twitter.js",
+                "src/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+  }
